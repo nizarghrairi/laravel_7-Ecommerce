@@ -12,9 +12,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+define('PAGINATION_COUNT',10);
 Route::group(['namespace'=>'Admin','middleware'=>'auth:admin'], function () {
 
     Route::get('/', 'DashboardController@index')->name('admin.dashboard');
+
+    #################################Begin Language Route#######################################
+    Route::group(['prefix' => 'languages'], function () {
+       Route::get('/','LanguagesController@index')->name('admin.languages');
+       Route::get('create','LanguagesController@create')->name('admin.languages.create');
+       Route::post('store','LanguagesController@store')->name('admin.languages.store');
+        });
+    #################################End Language Route#######################################
 });
 
 

@@ -12,14 +12,14 @@
 	// String validation:
 
 	if (!Validator.isEmail('myemail'))
-		alert('Invalid email.');
+		alerts('Invalid email.');
 
 	// Form validation:
 
 	var f = document.forms['myform'];
 
 	if (!Validator.isEmail(f.myemail))
-		alert('Invalid email.');
+		alerts('Invalid email.');
 */
 
 var Validator = {

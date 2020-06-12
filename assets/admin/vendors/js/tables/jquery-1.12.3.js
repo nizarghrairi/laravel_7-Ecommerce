@@ -256,7 +256,7 @@ jQuery.extend( {
 	noop: function() {},
 
 	// See test/unit/core.js for details concerning isFunction.
-	// Since version 1.3, DOM methods and functions like alert
+	// Since version 1.3, DOM methods and functions like alerts
 	// aren't supported. They return false on IE (#2968).
 	isFunction: function( obj ) {
 		return jQuery.type( obj ) === "function";
@@ -5453,7 +5453,7 @@ jQuery.event = {
 			postDispatch: function( event ) {
 
 				// Support: Firefox 20+
-				// Firefox doesn't alert if the returnValue field is not set.
+				// Firefox doesn't alerts if the returnValue field is not set.
 				if ( event.result !== undefined && event.originalEvent ) {
 					event.originalEvent.returnValue = event.result;
 				}

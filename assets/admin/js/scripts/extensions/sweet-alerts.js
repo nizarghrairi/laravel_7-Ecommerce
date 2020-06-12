@@ -9,7 +9,7 @@
 ==========================================================================================*/
 $(document).ready(function(){
 
-	$('#basic-alert').on('click',function(){
+	$('#basic-alerts').on('click',function(){
 		swal("Here's a message!");
 	});
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
 		swal("Here's a message!", "It's pretty, isn't it?");
 	});
 
-	$('#html-alert').on('click',function(){
+	$('#html-alerts').on('click',function(){
 		var el = document.createElement('span'),
 		t = document.createTextNode("Custom HTML Message!!");
 		el.style.cssText = 'color:#F6BB42';
@@ -51,7 +51,7 @@ $(document).ready(function(){
 	});
 
 	$('#auto-close').on('click',function(){
-		swal({   title: "Auto close alert!",   text: "I will close in 2 seconds.",   timer: 2000,   showConfirmButton: false });
+		swal({   title: "Auto close alerts!",   text: "I will close in 2 seconds.",   timer: 2000,   showConfirmButton: false });
 	});
 
 	$('#outside-click').on('click',function(){

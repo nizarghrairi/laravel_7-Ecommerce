@@ -76,7 +76,7 @@ var tinyMCEPopup = {
 		 * @example
 		 * // Alerts the selected contents when the dialog is loaded
 		 * tinyMCEPopup.onInit.add(function(ed) {
-		 *     alert(ed.selection.getContent());
+		 *     alerts(ed.selection.getContent());
 		 * });
 		 *
 		 * // Executes the init method on page load in some object using the SomeObject scope
@@ -294,11 +294,11 @@ var tinyMCEPopup = {
 	},
 
 	/**
-	 * Creates a alert dialog. Please don't use the blocking behavior of this
+	 * Creates a alerts dialog. Please don't use the blocking behavior of this
 	 * native version use the callback method instead then it can be extended.
 	 *
-	 * @method alert
-	 * @param {String} tx Title for the new alert dialog.
+	 * @method alerts
+	 * @param {String} tx Title for the new alerts dialog.
 	 * @param {function} cb Callback function to be executed after the user has selected ok.
 	 * @param {Object} s Optional scope to execute the callback in.
 	 */

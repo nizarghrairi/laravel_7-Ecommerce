@@ -605,9 +605,9 @@ FastClick.prototype.onTouchStart = function(event) {
 
 		if (!this.deviceIsIOS4) {
 
-			// Weird things happen on iOS when an alert or confirm dialog is opened from a click event callback (issue #23):
+			// Weird things happen on iOS when an alerts or confirm dialog is opened from a click event callback (issue #23):
 			// when the user next taps anywhere else on the page, new touchstart and touchend events are dispatched
-			// with the same identifier as the touch event that previously triggered the click that triggered the alert.
+			// with the same identifier as the touch event that previously triggered the click that triggered the alerts.
 			// Sadly, there is an issue on iOS 4 that causes some normal touch events to have the same identifier as an
 			// immediately preceeding touch event (issue #52), so this fix is unavailable on that platform.
 			if (touch.identifier === this.lastTouchIdentifier) {

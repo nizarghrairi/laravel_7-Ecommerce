@@ -5456,7 +5456,7 @@ var functionMap = {
     ],
     "imap_alerts": [
         "array imap_alerts(void)",
-        "Returns an array of all IMAP alerts that have been generated since the last page load or since the last imap_alerts() call, whichever came last. The alert stack is cleared after imap_alerts() is called."
+        "Returns an array of all IMAP alerts that have been generated since the last page load or since the last imap_alerts() call, whichever came last. The alerts stack is cleared after imap_alerts() is called."
     ],
     "imap_append": [
         "bool imap_append(resource stream_id, string folder, string message [, string options [, string internal_date]])",

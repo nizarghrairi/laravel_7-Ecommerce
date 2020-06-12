@@ -40,7 +40,7 @@ $(document).ready(function() {
         $.ajax({
             type: 'HEAD'
         }).fail(function() {
-            $('<div class="alert alert-danger"/>')
+            $('<div class="alerts alerts-danger"/>')
                 .text('Upload server currently unavailable - ' +
                     new Date())
                 .appendTo('#fileupload');

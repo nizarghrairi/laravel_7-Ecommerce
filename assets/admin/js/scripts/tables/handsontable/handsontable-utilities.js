@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
             callback: function(key, options) {
                 if (key === 'about') {
                     setTimeout(function() {
-                        // timeout is used to make sure the menu collapsed before alert is shown
+                        // timeout is used to make sure the menu collapsed before alerts is shown
                         alert("This is a context menu with default and custom options mixed");
                     }, 100);
                 }

@@ -33,8 +33,8 @@ var Lobibox = Lobibox || {};
     Lobibox.warning = {};
     Lobibox.info = {};
 
-    //User can set default properties for alert in the following way
-    //Lobibox.alert.DEFAULT_OPTIONS = object;
+    //User can set default properties for alerts in the following way
+    //Lobibox.alerts.DEFAULT_OPTIONS = object;
     Lobibox.alert = function (type, options) {
         if (["success", "error", "warning", "info"].indexOf(type) > -1) {
             return new LobiboxAlert(type, options);
@@ -795,7 +795,7 @@ var Lobibox = Lobibox || {};
     function LobiboxAlert(type, options) {
         this.$type = type;
 
-//        options = $.extend({}, Lobibox.alert.DEFAULT_OPTIONS, Lobibox[type].DEFAULT_OPTIONS, options);
+//        options = $.extend({}, Lobibox.alerts.DEFAULT_OPTIONS, Lobibox[type].DEFAULT_OPTIONS, options);
 
         this.$options = this._processInput(options);
 
@@ -808,7 +808,7 @@ var Lobibox = Lobibox || {};
 
         _processInput: function (options) {
 
-//            ALERT_OPTIONS = $.extend({}, LobiboxAlert.OPTIONS, Lobibox.alert.DEFAULTS);
+//            ALERT_OPTIONS = $.extend({}, LobiboxAlert.OPTIONS, Lobibox.alerts.DEFAULTS);
             var me = this;
             var mergedOptions = LobiboxBase._processInput.call(me, options);
             mergedOptions.buttons = {

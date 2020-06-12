@@ -34,7 +34,7 @@
   $('.alertAnimation').each(function(){
     $(this).on("click", function(){
       var data = $(this).attr('data-animation');
-      $(this).parent('.alert').addClass('animated '+data);
+      $(this).parent('.alerts').addClass('animated '+data);
       $(this).parent('div').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
       function (e) {
           $('div').removeClass('animated '+data);

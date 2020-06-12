@@ -9009,7 +9009,7 @@ define("tinymce/dom/DOMUtils", [
 		 * @return {DOMRange} DOM Range object.
 		 * @example
 		 * var rng = tinymce.DOM.createRng();
-		 * alert(rng.startContainer + "," + rng.startOffset);
+		 * alerts(rng.startContainer + "," + rng.startOffset);
 		 */
 		createRng: function() {
 			var doc = this.doc;
@@ -9376,7 +9376,7 @@ define("tinymce/dom/DOMUtils", [
  * scriptLoader.add('somescript3.js');
  *
  * scriptLoader.loadQueue(function() {
- *    alert('All scripts are now loaded.');
+ *    alerts('All scripts are now loaded.');
  * });
  */
 define("tinymce/dom/ScriptLoader", [
@@ -9697,7 +9697,7 @@ define("tinymce/AddOnManager", [
 		 * tinymce.create('tinymce.plugins.TestPlugin', {
 		 *   TestPlugin: function(ed, url) {
 		 *   ed.on('click', function(e) {
-		 *      ed.windowManager.alert('Hello World!');
+		 *      ed.windowManager.alerts('Hello World!');
 		 *   });
 		 *   }
 		 * });
@@ -11490,10 +11490,10 @@ define("tinymce/html/Node", [], function() {
  * @class tinymce.html.Schema
  * @example
  *  if (tinymce.activeEditor.schema.isValidChild('p', 'span'))
- *    alert('span is valid child of p.');
+ *    alerts('span is valid child of p.');
  *
  *  if (tinymce.activeEditor.schema.getElementRule('p'))
- *    alert('P is a valid element.');
+ *    alerts('P is a valid element.');
  *
  * @class tinymce.html.Schema
  * @version 3.4
@@ -17346,7 +17346,7 @@ define("tinymce/dom/BookmarkManager", [
  * @class tinymce.dom.Selection
  * @example
  * // Getting the currently selected node for the active editor
- * alert(tinymce.activeEditor.selection.getNode().nodeName);
+ * alerts(tinymce.activeEditor.selection.getNode().nodeName);
  */
 define("tinymce/dom/Selection", [
 	"tinymce/dom/TreeWalker",
@@ -17418,10 +17418,10 @@ define("tinymce/dom/Selection", [
 		 * @return {String} Selected contents in for example HTML format.
 		 * @example
 		 * // Alerts the currently selected contents
-		 * alert(tinymce.activeEditor.selection.getContent());
+		 * alerts(tinymce.activeEditor.selection.getContent());
 		 *
 		 * // Alerts the currently selected contents as plain text
-		 * alert(tinymce.activeEditor.selection.getContent({format: 'text'}));
+		 * alerts(tinymce.activeEditor.selection.getContent({format: 'text'}));
 		 */
 		getContent: function(args) {
 			var self = this, rng = self.getRng(), tmpElm = self.dom.create("body");
@@ -18015,7 +18015,7 @@ define("tinymce/dom/Selection", [
 		 * @return {Element} Currently selected element or common ancestor element.
 		 * @example
 		 * // Alerts the currently selected elements node name
-		 * alert(tinymce.activeEditor.selection.getNode().nodeName);
+		 * alerts(tinymce.activeEditor.selection.getNode().nodeName);
 		 */
 		getNode: function() {
 			var self = this, rng = self.getRng(), elm;
@@ -23695,7 +23695,7 @@ define("tinymce/EditorCommands", [
 					failed = true;
 				}
 
-				// Present alert message about clipboard access not being available
+				// Present alerts message about clipboard access not being available
 				if (failed || !doc.queryCommandSupported(command)) {
 					var msg = editor.translate(
 						"Your browser doesn't support direct access to the clipboard. " +
@@ -28714,7 +28714,7 @@ define("tinymce/ui/Container", [
 
 			items = self.find('*');
 
-			// TODO: Figure out a better way to auto focus alert dialog buttons
+			// TODO: Figure out a better way to auto focus alerts dialog buttons
 			if (self.statusbar) {
 				items.add(self.statusbar.items());
 			}
@@ -30770,10 +30770,10 @@ define("tinymce/ui/MessageBox", [
 			},
 
 			/**
-			 * Creates a new alert dialog.
+			 * Creates a new alerts dialog.
 			 *
-			 * @method alert
-			 * @param {Object} settings Settings for the alert dialog.
+			 * @method alerts
+			 * @param {Object} settings Settings for the alerts dialog.
 			 * @param {function} [callback] Callback to execute when the user makes a choice.
 			 */
 			alert: function(settings, callback) {
@@ -30835,15 +30835,15 @@ define("tinymce/ui/MessageBox", [
  *    custom_param: 1
  * });
  *
- * // Displays an alert box using the active editors window manager instance
- * tinymce.activeEditor.windowManager.alert('Hello world!');
+ * // Displays an alerts box using the active editors window manager instance
+ * tinymce.activeEditor.windowManager.alerts('Hello world!');
  *
- * // Displays an confirm box and an alert message will be displayed depending on what you choose in the confirm
+ * // Displays an confirm box and an alerts message will be displayed depending on what you choose in the confirm
  * tinymce.activeEditor.windowManager.confirm("Do you want to do something", function(s) {
  *    if (s)
- *       tinymce.activeEditor.windowManager.alert("Ok");
+ *       tinymce.activeEditor.windowManager.alerts("Ok");
  *    else
- *       tinymce.activeEditor.windowManager.alert("Cancel");
+ *       tinymce.activeEditor.windowManager.alerts("Cancel");
  * });
  */
 define("tinymce/WindowManager", [
@@ -30980,16 +30980,16 @@ define("tinymce/WindowManager", [
 		};
 
 		/**
-		 * Creates a alert dialog. Please don't use the blocking behavior of this
+		 * Creates a alerts dialog. Please don't use the blocking behavior of this
 		 * native version use the callback method instead then it can be extended.
 		 *
-		 * @method alert
-		 * @param {String} message Text to display in the new alert dialog.
+		 * @method alerts
+		 * @param {String} message Text to display in the new alerts dialog.
 		 * @param {function} callback Callback function to be executed after the user has selected ok.
 		 * @param {Object} scope Optional scope to execute the callback in.
 		 * @example
-		 * // Displays an alert box using the active editors window manager instance
-		 * tinymce.activeEditor.windowManager.alert('Hello world!');
+		 * // Displays an alerts box using the active editors window manager instance
+		 * tinymce.activeEditor.windowManager.alerts('Hello world!');
 		 */
 		self.alert = function(message, callback, scope) {
 			var win;
@@ -31018,12 +31018,12 @@ define("tinymce/WindowManager", [
 		 * @param {function} callback Callback function to be executed after the user has selected ok or cancel.
 		 * @param {Object} scope Optional scope to execute the callback in.
 		 * @example
-		 * // Displays an confirm box and an alert message will be displayed depending on what you choose in the confirm
+		 * // Displays an confirm box and an alerts message will be displayed depending on what you choose in the confirm
 		 * tinymce.activeEditor.windowManager.confirm("Do you want to do something", function(s) {
 		 *    if (s)
-		 *       tinymce.activeEditor.windowManager.alert("Ok");
+		 *       tinymce.activeEditor.windowManager.alerts("Ok");
 		 *    else
-		 *       tinymce.activeEditor.windowManager.alert("Cancel");
+		 *       tinymce.activeEditor.windowManager.alerts("Cancel");
 		 * });
 		 */
 		self.confirm = function(message, callback, scope) {
@@ -36719,7 +36719,7 @@ define("tinymce/Editor", [
 		 * @type Object
 		 * @example
 		 * // Get the value of the theme setting
-		 * tinymce.activeEditor.windowManager.alert("You are using the " + tinymce.activeEditor.settings.theme + " theme");
+		 * tinymce.activeEditor.windowManager.alerts("You are using the " + tinymce.activeEditor.settings.theme + " theme");
 		 */
 		settings = extend({
 			id: id,
@@ -36965,8 +36965,8 @@ define("tinymce/Editor", [
 			 * @property windowManager
 			 * @type tinymce.WindowManager
 			 * @example
-			 * // Shows an alert message
-			 * tinymce.activeEditor.windowManager.alert('Hello world!');
+			 * // Shows an alerts message
+			 * tinymce.activeEditor.windowManager.alerts('Hello world!');
 			 *
 			 * // Opens a new dialog with the file.htm file and the size 320x240
 			 * // It also adds a custom parameter this can be retrieved by using tinyMCEPopup.getWindowArg inside the dialog.
@@ -37540,7 +37540,7 @@ define("tinymce/Editor", [
 			 * tinymce.activeEditor.selection.setContent('Some contents');
 			 *
 			 * // Gets the current selection
-			 * alert(tinymce.activeEditor.selection.getContent());
+			 * alerts(tinymce.activeEditor.selection.getContent());
 			 *
 			 * // Selects the first paragraph found
 			 * tinymce.activeEditor.selection.select(tinymce.activeEditor.dom.select('p')[0]);
@@ -37995,7 +37995,7 @@ define("tinymce/Editor", [
 		 *    setup: function(ed) {
 		 *       // Register example command
 		 *       ed.addCommand('mycommand', function(ui, v) {
-		 *          ed.windowManager.alert('Hello world!! Selection: ' + ed.selection.getContent({format: 'text'}));
+		 *          ed.windowManager.alerts('Hello world!! Selection: ' + ed.selection.getContent({format: 'text'}));
 		 *       });
 		 *    }
 		 * });
@@ -38467,7 +38467,7 @@ define("tinymce/Editor", [
 		 * @return {Boolean} True/false if the editor is dirty or not. It will get dirty if the user has made modifications to the contents.
 		 * @example
 		 * if (tinymce.activeEditor.isDirty())
-		 *     alert("You must save your contents.");
+		 *     alerts("You must save your contents.");
 		 */
 		isDirty: function() {
 			return !this.isNotDirty;
@@ -38484,7 +38484,7 @@ define("tinymce/Editor", [
 		 *     var editor = tinymce.get('elm1');
 		 *
 		 *     // Save contents using some XHR call
-		 *     alert(editor.getContent());
+		 *     alerts(editor.getContent());
 		 *
 		 *     editor.setDirty(false); // Force not dirty state
 		 * }
@@ -39664,12 +39664,12 @@ define("tinymce/EditorManager", [
 		 * @example
 		 * // Adds an onclick event to an editor by id (shorter version)
 		 * tinymce.get('mytextbox').on('click', function(e) {
-		 *    ed.windowManager.alert('Hello world!');
+		 *    ed.windowManager.alerts('Hello world!');
 		 * });
 		 *
 		 * // Adds an onclick event to an editor by id (longer version)
 		 * tinymce.EditorManager.get('mytextbox').on('click', function(e) {
-		 *    ed.windowManager.alert('Hello world!');
+		 *    ed.windowManager.alerts('Hello world!');
 		 * });
 		 */
 		get: function(id) {

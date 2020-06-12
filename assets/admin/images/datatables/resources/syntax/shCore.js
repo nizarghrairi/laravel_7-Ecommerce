@@ -647,7 +647,7 @@ function attachEvent(obj, type, func, scope)
 };
 
 /**
- * Displays an alert.
+ * Displays an alerts.
  * @param {String} str String to display.
  */
 function alert(str)
@@ -659,7 +659,7 @@ function alert(str)
  * Finds a brush by its alias.
  *
  * @param {String} alias        Brush alias.
- * @param {Boolean} showAlert   Suppresses the alert if false.
+ * @param {Boolean} showAlert   Suppresses the alerts if false.
  * @return {Brush}              Returns bursh constructor if found, null otherwise.
  */
 function findBrush(alias, showAlert)

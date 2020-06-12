@@ -69,7 +69,7 @@ var AppleScriptHighlightRules = function() {
           'ASCII (character|number)|localized string|' +
           'choose (application|color|file|file name|' +
           'folder|from list|remote application|URL)|' +
-          'display (alert|dialog))\\b|^\\s*return\\b'
+          'display (alerts|dialog))\\b|^\\s*return\\b'
             },
             {
                 token: "constant.language",

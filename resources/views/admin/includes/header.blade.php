@@ -157,7 +157,7 @@
                                     <div class="media">
                                         <div class="media-left">
                         <span class="avatar avatar-sm avatar-online rounded-circle">
-                          <img src="admin/images/portrait/small/avatar-s-19.png"
+                          <img src="{{asset('assets/admin/images/portrait/Me.jpg')}}"
                                alt="avatar"><i></i></span>
                                         </div>
                                         <div class="media-body">
@@ -176,7 +176,7 @@
                                     <div class="media">
                                         <div class="media-left">
                         <span class="avatar avatar-sm avatar-busy rounded-circle">
-                          <img src="admin/images/portrait/small/avatar-s-2.png" alt="avatar"><i></i></span>
+                          <img src="{{asset('assets/admin/images/portrait/Me.jpg')}}" alt="avatar"><i></i></span>
                                         </div>
                                         <div class="media-body">
                                             <h6 class="media-heading">Bret Lezama</h6>
@@ -194,7 +194,7 @@
                                     <div class="media">
                                         <div class="media-left">
                         <span class="avatar avatar-sm avatar-online rounded-circle">
-                          <img src="admin/images/portrait/small/avatar-s-3.png" alt="avatar"><i></i></span>
+                          <img src="{{asset('assets/admin/images/portrait/Me.jpg')}}" alt="avatar"><i></i></span>
                                         </div>
                                         <div class="media-body">
                                             <h6 class="media-heading">Carie Berra</h6>

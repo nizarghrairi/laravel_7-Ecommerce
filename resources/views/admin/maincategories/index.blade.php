@@ -1,7 +1,6 @@
 @extends('layouts.admin')
 
 @section('content')
-
     <div class="app-content content">
         <div class="content-wrapper">
             <div class="content-header row">
@@ -12,7 +11,7 @@
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">الرئيسية</a>
                                 </li>
-                                <li class="breadcrumb-item active"> الاقسام
+                                <li class="breadcrumb-item active"> الاقسام الرئيسية
                                 </li>
                             </ol>
                         </div>
@@ -45,12 +44,13 @@
                                 <div class="card-content collapse show">
                                     <div class="card-body card-dashboard">
                                         <table
-                                            class="table display nowrap table-striped table-bordered ">
-                                            <thead>
+                                            class="table display nowrap table-striped table-bordered scroll-horizontal">
+                                            <thead class="">
                                             <tr>
-                                                <th>اللغة</th>
-                                                <th>الإختصار</th>
+                                                <th>القسم </th>
+                                                <th> اللغة</th>
                                                 <th>الحالة</th>
+                                                <th>صوره القسم</th>
                                                 <th>الإجراءات</th>
                                             </tr>
                                             </thead>
@@ -60,17 +60,22 @@
                                                 @foreach($categories as $category)
                                                     <tr>
                                                         <td>{{$category -> name}}</td>
-                                                        <td>{{$category -> translation_lang}}</td>
+                                                        <td>{{get_default_lang()}}</td>
                                                         <td>{{$category -> getActive()}}</td>
+                                                        <td> <img style="width: 150px; height: 100px;" src="{{$category ->photo}}"></td>
                                                         <td>
                                                             <div class="btn-group" role="group"
                                                                  aria-label="Basic example">
-                                                                <a href=""
+                                                                <a href="{{route('admin.maincategories.edit',$category -> id)}}"
                                                                    class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
 
 
                                                                 <a href=""
                                                                    class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1">حذف</a>
+
+
+                                                                <a href=""
+                                                                   class="btn btn-outline-warning btn-min-width box-shadow-3 mr-1 mb-1">تفعيل</a>
 
 
                                                             </div>
@@ -94,5 +99,4 @@
             </div>
         </div>
     </div>
-
 @endsection

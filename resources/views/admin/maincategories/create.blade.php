@@ -85,7 +85,7 @@
                                                                     <input type="text" id="abbr"
                                                                            class="form-control"
                                                                            placeholder="  "
-
+                                                                           value="{{$lang -> abbr}}"
                                                                            name="category[{{$index}}][abbr]">
 
                                                                     @error("category.$index.abbr")
@@ -97,7 +97,7 @@
 
                                                         </div>
                                                         <div class="row">
-                                                            <div class="col-md-12">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group mt-1">
                                                                     <input type="checkbox" value="1"
                                                                            name="category[{{$index}}][active]"

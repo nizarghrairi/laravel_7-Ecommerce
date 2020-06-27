@@ -1,7 +1,8 @@
 <?php
 
 return [
-    'ar'=>'on arabe',
-    'en'=>'on anglais',
-    'fr'=>'on français'
+    'ar'=>'en arabe',
+    'en'=>'en anglais',
+    'fr'=>'en français',
+    'it'=>'en italien'
 ];

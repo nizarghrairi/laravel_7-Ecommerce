@@ -80,7 +80,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="projectinput2"> أختر القسم </label>
-                                                            <select name="category_id" class="select2 form-control" style="width: 792.098px;">
+                                                            <select name="category_id" class="select form-control">
                                                                 <option label="من فضلك أختر القسم ">
                                                                     @if($categories && $categories -> count() > 0)
                                                                         @foreach($categories as $category)
@@ -90,12 +90,13 @@
                                                                     @endif
                                                                 </option>
                                                             </select>
-                                                            @error('academy_id')
+                                                            @error('category_id')
                                                             <span class="text-danger"> {{$message}}</span>
                                                             @enderror
                                                         </div>
                                                     </div>
                                                 </div>
+
 
 
                                                 <div class="row">
@@ -123,26 +124,21 @@
                                                             @enderror
                                                         </div>
                                                     </div>
-
-
-                                                </div>
-
-
-                                                <di class="row">
+                                                </div><div class="row">
                                                     <div class="col-md-6 ">
                                                         <div class="form-group">
-                                                            <label for="projectinput1"> العنوان  </label>
-                                                            <input type="text" id="pac-input"
+                                                            <label for="projectinput1"> كلمة السر </label>
+                                                            <input type="password" id="password"
                                                                    class="form-control"
-                                                                   placeholder="  " name="address">
+                                                                   placeholder="  " name="password">
 
-                                                            @error("address")
+                                                            @error("password")
                                                             <span class="text-danger"> {{$message}}</span>
                                                             @enderror
                                                         </div>
                                                     </div>
 
-                                                </di>
+                                                </div>
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group mt-1">
@@ -161,10 +157,25 @@
                                                     </div>
                                                 </div>
 
+                                                <di class="row">
+                                                    <div class="col-md-6 ">
+                                                        <div class="form-group">
+                                                            <label for="projectinput1"> العنوان  </label>
+                                                            <input type="text" id="pac-input"
+                                                                   class="form-control"
+                                                                   placeholder="  " name="address">
+
+                                                            @error("address")
+                                                            <span class="text-danger"> {{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+                                                </di>
+
                                             </div>
 
 
-                                            <div id="map" style="height: 500px;width: 1610px;"></div>
+                                            <div id="map" style="height: 500px;width: 1522px;"></div>
 
                                             <div class="form-actions">
                                                 <button type="button" class="btn btn-warning mr-1"
@@ -207,8 +218,8 @@
         function initAutocomplete() {
             var map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: 36.680535, lng: 10.296886 },
-                zoom: 13,
-                mapTypeId: 'roadmap'
+                zoom: 10,
+                mapTypeId: 'hybrid'
             });
             // move pin and current location
             infoWindow = new google.maps.InfoWindow;
@@ -304,7 +315,7 @@
             }
             // Create the search box and link it to the UI element.
             var input = document.getElementById('pac-input');
-            $("#pac-input").val("أبحث هنا ");
+            $("#pac-input").val("chercher ici ");
             var searchBox = new google.maps.places.SearchBox(input);
             map.controls[google.maps.ControlPosition.TOP_RIGHT].push(input);
             // Bias the SearchBox results towards current map's viewport.

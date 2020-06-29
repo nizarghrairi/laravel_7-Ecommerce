@@ -61,6 +61,7 @@ return [
             'url'=>env('APP_URL').'public',
             'visibility'=>'public',
         ],
+
         'vendors'=>[
             'driver'=>'local',
             'root'=>base_path() .'/assets/images/vendors/',

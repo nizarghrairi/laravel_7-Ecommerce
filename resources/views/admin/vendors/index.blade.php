@@ -1,4 +1,4 @@
- @extends('layouts.admin')
+@extends('layouts.admin')
 
 @section('content')
     <div class="app-content content">
@@ -11,7 +11,7 @@
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">الرئيسية</a>
                                 </li>
-                                <li class="breadcrumb-item active"> المتاجر
+                                <li class="breadcrumb-item active"> ألمتاجر
                                 </li>
                             </ol>
                         </div>
@@ -25,7 +25,7 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title">جميع المتاجر الرئيسية </h4>
+                                    <h4 class="card-title">جميع المتاجر </h4>
                                     <a class="heading-elements-toggle"><i
                                             class="la la-ellipsis-v font-medium-3"></i></a>
                                     <div class="heading-elements">
@@ -47,11 +47,11 @@
                                             class="table display nowrap table-striped table-bordered scroll-horizontal">
                                             <thead class="">
                                             <tr>
-                                                <th>الإسم </th>
+                                                <th>الاسم</th>
                                                 <th> اللوجو</th>
                                                 <th>الهاتف</th>
                                                 <th>القسم الرئيسي</th>
-                                                <th>الحالة</th>
+                                                <th> ألحالة </th>
                                                 <th>الإجراءات</th>
                                             </tr>
                                             </thead>
@@ -61,14 +61,17 @@
                                                 @foreach($vendors as $vendor)
                                                     <tr>
                                                         <td>{{$vendor -> name}}</td>
-                                                        <td> <img style="width: 150px; height: 100px;" src="{{$vendor ->logo}}"></td>
+                                                        <td><img style="width: 150px; height: 100px;"
+                                                                 src="{{$vendor -> 	logo}}"></td>
+
                                                         <td>{{$vendor -> mobile}}</td>
-                                                        <td>{{$vendor -> category ->name}}</td>
-                                                        <td>{{$vendor -> getActive}}</td>
-                                                        {{--<td>
+                                                        <td> {{$vendor -> category-> name}}</td>
+
+                                                        <td> {{$vendor -> getActive()}}</td>
+                                                        <td>
                                                             <div class="btn-group" role="group"
                                                                  aria-label="Basic example">
-                                                                <a href="{{route('admin.maincategories.edit',$vendor -> id)}}"
+                                                                <a href="{{route('admin.vendors.edit',$vendor -> id)}}"
                                                                    class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
 
 
@@ -81,7 +84,7 @@
 
 
                                                             </div>
-                                                        </td>--}}
+                                                        </td>
                                                     </tr>
                                                 @endforeach
                                             @endisset

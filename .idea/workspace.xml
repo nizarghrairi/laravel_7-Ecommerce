@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6344564-e166-42f1-9a1e-d677a71d6bb3" name="Default Changelist" comment="">
+    <list default="true" id="e6344564-e166-42f1-9a1e-d677a71d6bb3" name="Default Changelist" comment="add status active or not active for Maincategory">
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/VendorRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Vendor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Notifications/VendorCreated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Observers/MainCategoryObserve.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/maincategories/6Cr33B0RTV5j7UwRMVHZwVqZAuiFpq3fNlKHtRum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/maincategories/Uee6xKG8QeewB57FSkCBlNf3rFrZTXgHM8vuRJTu.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/maincategories/oVDLKh0efXhIQ5y8KbEBHxS8r0G8FLu2dpPCR1pi.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/maincategories/yNVKB2tRQbptts8RO3sAIxNIpoPYEsLcEK4dtCnt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/vendors/0yZM1gD9w9PQB6kpQiYeYfA1FYdymQn9Ey1OLVxg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/vendors/Yr1kSp3UXLzpQsrW4jvxdxy51DfD2t6MMBIu6WUO.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/vendors/bx7nC6EMQYKUc4KJfiqkotvZUQhOrd80pFUsMcUl.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web4admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
+            <state relative-caret-position="364">
               <caret line="39" column="114" selection-start-line="39" selection-start-column="114" selection-end-line="39" selection-end-column="114" />
             </state>
           </provider>
@@ -44,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/MainCategoriesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3179">
+            <state relative-caret-position="364">
               <caret line="194" column="103" selection-start-line="194" selection-start-column="103" selection-end-line="194" selection-end-column="103" />
               <folding>
                 <element signature="e#46#82#0#PHP" expanded="true" />
@@ -77,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Observers/MainCategoryObserve.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+            <state relative-caret-position="204">
+              <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -293,9 +304,8 @@
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2159" />
     <option name="width" value="814" />
     <option name="height" value="867" />
   </component>
@@ -323,6 +333,12 @@
               <item name="laravel_7-Ecommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel_7-Ecommerce" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel_7-Ecommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel_7-Ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -334,24 +350,6 @@
             <path>
               <item name="laravel_7-Ecommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel_7-Ecommerce" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laravel_7-Ecommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel_7-Ecommerce" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laravel_7-Ecommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel_7-Ecommerce" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="maincategories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laravel_7-Ecommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel_7-Ecommerce" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -378,10 +376,7 @@
             <path>
               <item name="laravel_7-Ecommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel_7-Ecommerce" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -459,7 +454,7 @@
       <workItem from="1593408105521" duration="35971000" />
       <workItem from="1593693401603" duration="7606000" />
       <workItem from="1593986100106" duration="12081000" />
-      <workItem from="1594111432632" duration="1932000" />
+      <workItem from="1594111432632" duration="2197000" />
     </task>
     <task id="LOCAL-00001" summary="create admin user with tinker">
       <created>1591926247436</created>
@@ -517,11 +512,18 @@
       <option name="project" value="LOCAL" />
       <updated>1594114845994</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add status active or not active for Maincategory">
+      <created>1594114883761</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1594114883761</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267097000" />
+    <option name="totallyTimeSpent" value="267362000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,13 +535,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="2159" y="0" width="814" height="867" extended-state="0" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.1503856" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.31034482" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32833788" />
@@ -550,9 +551,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.26379544" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5051414" side_tool="true" visible="true" weight="0.39569312" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49485862" visible="true" weight="0.39569312" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32974428" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50132626" side_tool="true" visible="true" weight="0.32970026" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49469495" weight="0.40054497" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49867374" visible="true" weight="0.32970026" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -862,25 +863,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web4admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
+        <state relative-caret-position="364">
           <caret line="39" column="114" selection-start-line="39" selection-start-column="114" selection-end-line="39" selection-end-column="114" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/MainCategoriesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3179">
+        <state relative-caret-position="364">
           <caret line="194" column="103" selection-start-line="194" selection-start-column="103" selection-end-line="194" selection-end-column="103" />
           <folding>
             <element signature="e#46#82#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/maincategories/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="81" column="83" selection-start-line="81" selection-start-column="83" selection-end-line="81" selection-end-column="83" />
         </state>
       </provider>
     </entry>
@@ -894,10 +888,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/maincategories/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="81" column="83" selection-start-line="81" selection-start-column="83" selection-end-line="81" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Observers/MainCategoryObserve.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+        <state relative-caret-position="204">
+          <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
         </state>
       </provider>
     </entry>

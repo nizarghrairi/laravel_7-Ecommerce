@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6344564-e166-42f1-9a1e-d677a71d6bb3" name="Default Changelist" comment="add map location for vendors">
+    <list default="true" id="e6344564-e166-42f1-9a1e-d677a71d6bb3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainCategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainCategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/VendorsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/VendorsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/MainCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MainCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/maincategories/4ktGUdDhy2J6Va4NyUWJGnltwZkUynFx4JhTZXk2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/maincategories/E8EUS34tWoPWHwYXzDaHMNOHx7gZF5Ethrg35AWr.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/maincategories/J0BF3mmPTGQ3Vv2nNEcicKyKmbouQTW7zPiIsilw.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/maincategories/TYf4jw1kcXqBmd47zKaeoTfbTFzrlx3ah80IM96l.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/maincategories/agf6jC4zZiZAjCgcW28p26PeelpVLrferUN4alAb.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/maincategories/fnn1OTLd2cLePy78SaleEGrRpVXtEApnjMCxsX1m.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/maincategories/kqXS8CBHVLr3ETMql7PikOpiVFXAYGvj7elnlf2H.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/maincategories/pXKbUeHktaIoADQoGpkbZIXdNQKhgZN0VHBmPbgk.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/maincategories/rPBwRJ5KIA5UpD90lY9HymPf3exVmWAoGDjrjfJF.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/maincategories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/maincategories/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/vendors/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/vendors/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/vendors/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/vendors/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/vendors/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/vendors/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web4admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web4admin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -476,7 +459,7 @@
       <workItem from="1593408105521" duration="35971000" />
       <workItem from="1593693401603" duration="7606000" />
       <workItem from="1593986100106" duration="12081000" />
-      <workItem from="1594111432632" duration="1691000" />
+      <workItem from="1594111432632" duration="1932000" />
     </task>
     <task id="LOCAL-00001" summary="create admin user with tinker">
       <created>1591926247436</created>
@@ -527,11 +510,18 @@
       <option name="project" value="LOCAL" />
       <updated>1593463567147</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add status active or not active for Maincategory">
+      <created>1594114845994</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1594114845994</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266856000" />
+    <option name="totallyTimeSpent" value="267097000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -543,13 +533,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2159" y="0" width="814" height="867" extended-state="0" />
+    <frame x="1358" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.31034482" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.1503856" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32833788" />
@@ -560,8 +550,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.26379544" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5045386" side_tool="true" weight="0.4811784" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49546143" visible="true" weight="0.40054497" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5051414" side_tool="true" visible="true" weight="0.39569312" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49485862" visible="true" weight="0.39569312" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -582,7 +572,8 @@
     <MESSAGE value="add CRUD for section" />
     <MESSAGE value="create vendors controller" />
     <MESSAGE value="add map location for vendors" />
-    <option name="LAST_COMMIT_MESSAGE" value="add map location for vendors" />
+    <MESSAGE value="add status active or not active for Maincategory" />
+    <option name="LAST_COMMIT_MESSAGE" value="add status active or not active for Maincategory" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.htaccess">

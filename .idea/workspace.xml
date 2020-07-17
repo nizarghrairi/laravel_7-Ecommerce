@@ -479,7 +479,7 @@
       <workItem from="1594557585423" duration="21401000" />
       <workItem from="1594721120768" duration="750000" />
       <workItem from="1594809196627" duration="20463000" />
-      <workItem from="1594907697150" duration="23725000" />
+      <workItem from="1594907697150" duration="24075000" />
     </task>
     <task id="LOCAL-00001" summary="create admin user with tinker">
       <created>1591926247436</created>
@@ -555,7 +555,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="349214000" />
+    <option name="totallyTimeSpent" value="349564000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

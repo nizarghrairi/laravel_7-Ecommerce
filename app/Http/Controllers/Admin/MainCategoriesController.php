@@ -167,9 +167,13 @@ class MainCategoriesController extends Controller
 
             }
 
+            //delete from folder
             $image = Str::after($maincategory->photo, 'assets/');
             $image = base_path('assets/' . $image);
-            unlink($image); //delete from folder
+            unlink($image);
+
+            //delete translation
+            $maincategory -> categories()->delete();
 
             $maincategory->delete();
             return redirect()->route('admin.maincategories')->with(['success' => 'تم حذف القسم بنجاح']);

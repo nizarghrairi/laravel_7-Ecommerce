@@ -49,6 +49,7 @@ Route::group(['namespace'=>'Admin','middleware'=>'auth:admin'], function () {
         Route::get('edit/{id}','VendorsController@edit')->name('admin.vendors.edit');
         Route::post('update/{id}','VendorsController@update')->name('admin.vendors.update');
         Route::get('delete/{id}','VendorsController@destroy')->name('admin.vendors.destroy');
+        Route::get('changeStatus/{id}','VendorsController@changeStatus')->name('admin.vendors.status');
     });
     #################################End Vendors Route#######################################
 });
